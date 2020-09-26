@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lete乐特 - 404找不到这个页面</title>
+    <meta name="keywords" content="Lete乐特,Lete个人博客,乐特个人博客,Lete乐特个人博客,Lete,乐特,Lete乐特个人主页,lete114,博客,开发者,程序猿,编程,代码,开源,IT网站,Java,JavaWeb,Java常用框架,Spring,SpringBoot,SpringMVC,MyBatis,数据库,MySQL,C#,.NET,开发工具,Git,GitHub,Gitee,(My)Eclipse,IDEA, Hexo,Linux,Maven,前端基础知识,HTML,CSS,JavaScript,jQuery,Ajax,Bootstrap,工具&#x2F;资源,教程,分享,推荐,娱乐,摄影,C#,CMD,Developer,Programmer,Coder">
+    <meta name="description" content="我相信我可以，但我又一直在路上，所以我有无限的可能！" />
+    <meta name="author" content="Codrops" />
+    <link href="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/images/favicon.ico" mce_href="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/images/favicon.ico" rel="shortcut icon" type="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/images/favicon.ico"
+    />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/js/jquery.beattext.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/css/button.css" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#roloadText').beatText({
+                isAuth: true,
+                beatHeight: "1em",
+                isRotate: false,
+                upTime: 100,
+                downTime: 100
+            });
+        });
+    </script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div class="logo" id="a" onClick="a();">
+        <img src="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/Lete_Blog/images/favicon.ico">
+    </div>
+    <br /><br />
+    <div class="container">
+        <p id="roloadText">404！网页君找不到这个网页了哦...</p>
+        <p>
+            <span id="jumpTo">30</span>秒后自动跳转回首页
+        </p>
+
+
+    </div>
+
+    <div class="box bg-1">
+        <button class="button button--antiman button--round-l button--text-medium" onClick="window.open('https://www.lete114.top','_self')"><span>返回首页</span></button>
+    </div>
+    </div>
+    <div class="body_buttom"></div>
+
+    <audio autoplay="autoplay">
+  	<source src="https://cdn.jsdelivr.net/gh/lete114/CDN@3.1/music/怎样/火羊瞌睡了 - 怎样（翻自 王天阳）.mp3" />
+</audio>
+
+    <script type="text/javascript">
+        function countDown(secs, surl) {
+            //alert(surl);     
+            var jumpTo = document.getElementById('jumpTo');
+            jumpTo.innerHTML = secs;
+            if (--secs > 0) {
+                setTimeout("countDown(" + secs + ",'" + surl + "')", 1000);
+            } else {
+                location.href = surl;
+            }
+        }
+
+        function a() {
+            window.location.href = "https://www.lete114.top";
+
+        }
+    </script>
+    <script type="text/javascript">
+        countDown(30, 'https://www.lete114.top/');
+    </script>
+</body>
+
+</html>
